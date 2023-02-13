@@ -231,6 +231,26 @@ img {
     letter-spacing: 2%;
 }
 
+/* Overlay */
+
+.overlay {
+    max-width: auto;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 10px solid orange;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/people-office-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
 /* section */
 
 .section.nav {
@@ -289,6 +309,7 @@ img {
 /* footer */
 .footer {
 
+
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -310,13 +331,44 @@ img {
 }
 
 .feature-list {
-    display:flex;
+    display: flex;
     flex-wrap: nowrap;
 }
 
 .feature-list .item {
     width: 300px;
 }
+
+.feature-list .item::before {
+    display: block;
+    content: '';
+    height: 112px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--light);
+}
+
+
+/*
+
+.icon-antenna::before {
+    background-image: url('../images/icon-1-antenna.svg');
+}
+
+.icon-clock::before {
+    background-image: url('../images/icon-2-clock.svg');
+}
+
+.icon-diagram::before {
+    background-image: url('../images/icon-3-diagram.svg');
+}
+
+.icon-astronaut::before {
+    background-image: url('../images/icon-4-astronaut.svg');
+}
+
+*/
 
 .feature-list .item:not(:last-child){
     margin-right: 24px;
@@ -551,3 +603,136 @@ Fuckup check
 outline: 2px solid tomato;
 }
 */
+
+/* customers */
+
+.section-customers {
+    width: 1128px;
+    height: 200;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.customers-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+    color:aqua;
+}
+
+.costomers-item:hover {
+    border-color: #4D5AE5;
+}
+
+/* sprite */
+.text-media {
+    padding: 0px;
+    margin-top: 0;
+    margin-right: 0px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+}
+
+/* team media */
+
+
+.list-mediateam {
+    display: flex;
+    justify-content: left;
+}
+
+.item-mediateam {
+    padding: 0px;
+    border:none;
+}
+
+.icon-instagram {
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid blue;
+}
+
+.icon-twitter {
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid blue;
+}
+
+.icon-facebook {
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid blue;
+}
+
+.icon-linkedin {
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid blue;
+}
+
+/* footer media */
+
+.list-mediafooter {
+    display: flex;
+    justify-content: left;
+}
+
+.item-mediafooter {
+    padding: 0px;
+    border:none;
+}
+
+.icon-instagram {
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid blue;
+}
+
+.icon-twitter {
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid blue;
+}
+
+.icon-facebook {
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid blue;
+}
+
+.icon-linkedin {
+    padding: 0px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid blue;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+}
