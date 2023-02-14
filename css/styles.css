@@ -339,15 +339,7 @@ img {
     width: 300px;
 }
 
-.feature-list .item::before {
-    display: block;
-    content: '';
-    height: 112px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--light);
-}
+
 
 
 /*
@@ -606,17 +598,9 @@ outline: 2px solid tomato;
 
 /* customers */
 
-.section-customers {
-    width: 1128px;
-    height: 200;
-    padding-left: auto;
-    padding-right: auto;
-}
-
 .customers-list {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .customers-item {
@@ -627,14 +611,36 @@ outline: 2px solid tomato;
     padding-bottom: 16px;
     padding-right: 32px;
     padding-left: 32px;
-    color:aqua;
+    border-color: red;
 }
 
-.costomers-item:hover {
+a.link.customer-1,
+a.link.customer-2,
+a.link.customer-3,
+a.link.costomer-4,
+a.link.customer-5,
+a.link.costomer-6 {
+    padding: 0px;
+    margin: 0px;
+    border-color: red;
+}
+
+.rectangle {
+    margin: 0px;
+    padding: 0px;
+    width: 168px;
+    height: 88px;
+    border-color: red;
+    border-radius: 4px;
+}
+
+.costomers-item:hover,
+.customer-item:focus {
     border-color: #4D5AE5;
 }
 
 /* sprite */
+
 .text-media {
     padding: 0px;
     margin-top: 0;
@@ -645,10 +651,19 @@ outline: 2px solid tomato;
 
 /* team media */
 
+.team-media {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    height: 104px;
+    background-color: var(--white);
+}
 
 .list-mediateam {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
 }
 
 .item-mediateam {
@@ -661,7 +676,6 @@ outline: 2px solid tomato;
     margin: 0px;
     width: 40px;
     height: 40px;
-    outline: 1px solid blue;
 }
 
 .icon-twitter {
@@ -669,7 +683,6 @@ outline: 2px solid tomato;
     margin: 0px;
     width: 40px;
     height: 40px;
-    outline: 1px solid blue;
 }
 
 .icon-facebook {
@@ -677,7 +690,6 @@ outline: 2px solid tomato;
     margin: 0px;
     width: 40px;
     height: 40px;
-    outline: 1px solid blue;
 }
 
 .icon-linkedin {
@@ -685,54 +697,57 @@ outline: 2px solid tomato;
     margin: 0px;
     width: 40px;
     height: 40px;
-    outline: 1px solid blue;
 }
 
 /* footer media */
 
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: left;
+}
+
 .list-mediafooter {
     display: flex;
-    justify-content: left;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .item-mediafooter {
     padding: 0px;
-    border:none;
+    border: none;
 }
 
-.icon-instagram {
+.icon-instagramfooter {
     padding: 0px;
     margin: 0px;
     width: 40px;
     height: 40px;
-    outline: 1px solid blue;
 }
 
-.icon-twitter {
+.icon-twitterfooter {
     padding: 0px;
     margin: 0px;
     width: 40px;
     height: 40px;
-    outline: 1px solid blue;
 }
 
-.icon-facebook {
+.icon-facebookfooter {
     padding: 0px;
     margin: 0px;
     width: 40px;
     height: 40px;
-    outline: 1px solid blue;
 }
 
-.icon-linkedin {
+.icon-linkedinfooter {
     padding: 0px;
     margin: 0px;
     width: 40px;
     height: 40px;
-    outline: 1px solid blue;
 }
 
-.footer {
-    display: flex;
-    justify-content: flex-start;
+.link-media {
+    padding: 0px;
+    margin: 0px;
 }
