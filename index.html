@@ -395,5 +395,17 @@
         </div>
     </footer>
     
+    <script 
+        src="./js/modal.js">
+    </script>
+    
+    <script> 
+        const { height: pageHeaderHeight } = document
+            .qwerySelector(".page-header")
+            getBoundingClientRect();
+
+        document.body.style.paddingTop = '${pageHeaderHeight}px';
+    </script>
+
 </body>
 </html>
