@@ -333,13 +333,21 @@ img {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    gap: 24px;
 }
 
-.feature-list .item {
-    width: 300px;
+.feature-item {
+padding: 0px;
+margin: 0px;
 }
 
-
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+    width: 264px;
+    height: 112px;
+}
 
 
 /*
@@ -362,12 +370,12 @@ img {
 
 */
 
-.feature-list .item:not(:last-child){
-    margin-right: 24px;
-}
+
 
 .feature-container {
     padding-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Doing*/
@@ -412,6 +420,12 @@ img {
     text-align: center;
 }
 
+a .list-mediateam,
+a .list-mediafooter {
+    height: 40px;
+    width: 40px;
+}
+
 /* filter btns */
 .button-list {
     display: flex;
@@ -426,10 +440,6 @@ img {
     display: inline-block;
     box-sizing: border-box;
     border: 1px solid transparent;
-}
-
-.filter-link:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter-item {
@@ -492,8 +502,9 @@ img {
 
 .button:hover,
 .button:focus {
-    background-color: var(--primary-brend);
+    background-color: var(--pressed-state);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .button-list {
@@ -507,9 +518,9 @@ img {
     padding: 12px 24px;
     text-align: center;
 
-    color: var(--primary-brend);
-    background: var(--light);
-    border: 1px solid var(--accent);
+    color: var(--white);
+    background: var(--primary-brend);
+    border: 1px solid var(--primary-brend);
 
     text-decoration: none;
     font-family: 'Roboto';
@@ -541,6 +552,11 @@ img {
     border-right: solid 1px var(--accent);
     border-bottom: solid 1px var(--accent);
     border-left: solid 1px var(--accent);
+}
+
+.filter-link:hover,
+.filter-link:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* paragraph */
@@ -679,6 +695,23 @@ outline: 2px solid tomato;
 .item-mediateam {
     padding: 0px;
     border:none;
+    width: 40px;
+    height: 40px;
+}
+
+.link-mediateam {
+    height: 100%;
+    width: 100%;
+}
+
+.item-media {
+width: 40px;
+height: 40px;
+}
+
+.link-media {
+    width: 100%;
+    height: 100px;
 }
 
 .icon-instagram {
@@ -689,11 +722,14 @@ outline: 2px solid tomato;
     fill: var(--primary-brend);
     }
 
-.icon-mediafooter:hover,
-.icon-mediafooter:focus,
 .icon-media:hover,
 .icon-media:focus {
     fill: var(--pressed-state);
+}
+
+.icon-mediafooter:hover,
+.icon-mediafooter:focus {
+    fill: var(--success);
 }
 
 .icon-twitter {
